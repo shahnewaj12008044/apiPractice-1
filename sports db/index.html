@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.1.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <header>
+        <h1 class="font-bold text-4xl text-center mb-4">Welcome to sports world</h1>
+    </header>
+    <main>
+        <section class="grid grid-cols-2 mx-2">
+            <!-- left side -->
+            <div   class="">
+                
+                <div class="flex items-center  p-5">
+                    <input id="seach-bar" type="text" placeholder="search  here" class="input w-3/4 border-4 border-gray-500  text-center text-2xl" />
+                    <button onclick="loadPlayer()" class="btn btn-success ml-3">Search</button>
+                </div>
+                <div class="left-64 top-64 fixed flex justify-center items-center">
+                    <span id="spinner" class="loading loading-infinity loading-lg hidden "></span>
+                </div>
+                <div id="container" class="grid lg:grid-cols-2 g-4 mr-3 md:grid-cols-1">
+                    
+                </div>
+                
+            </div>
+            <!-- right side -->
+            <div class="bg-slate-200">
+                <h1 class="text-4xl p-3">Player Details</h1>
+                <div>
+                    <img id="male" src="img/male.jpeg" alt="" class="hidden">
+                    <img id="female" src="img/female.jpg" alt="" class="hidden">
+                </div>
+                <div id="spinner-2" class=" flex justify-center items-center hidden">
+                    <span class="loading loading-bars loading-lg"></span>
+                </div>
+                  
+                <div id="player-details"></div>
+
+            </div>
+        </section>
+    </main>
+    <!-- js -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
